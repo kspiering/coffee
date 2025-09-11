@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     letter-spacing: normal;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 :root {
@@ -24,13 +24,6 @@
 }
 
 
-/* body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
- */
 .light {
   /* forces light color-scheme */
    display: flex;
@@ -117,6 +110,7 @@ img.heroImg {
 }
 
 .heroTitle {
+    width: 60%;
     font-size: 100px;
     z-index: 2;
     color: #F7F4EA;
@@ -189,6 +183,7 @@ img.bannerImg {
     justify-content: center; /* Container-Inhalt horizontal zentrieren */
     align-items: center;
     gap: 4rem; /* Abstand zwischen den Items */
+      background-color: transparent;
 }
 
 .contentDuo {
