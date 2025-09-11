@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: normal;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+:root {
+  /* this has to be set to switch between light or dark */
+  color-scheme: light dark;
+
+  --light-bg: #F7F4EA;
+  --light-color: rgb(82, 56, 27);
+/*   --light-code: tomato; */
+
+  --dark-bg: rgb(82, 56, 27);
+  --dark-color: #F7F4EA;
+  /* --dark-code: rgb(0, 0, 0); */
+}
+* {
+  background-color: light-dark(var(--light-bg), var(--dark-bg));
+  color: light-dark(var(--light-color), var(--dark-color));
+}
+
+
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+ */
+.light {
+  /* forces light color-scheme */
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  color-scheme: light;
+  width: 100%;
+  height: 600px;
+  padding: 4rem;
+}
+.dark {
+  /* forces dark color-scheme */
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  color-scheme: dark;
+    width: 100%;
+  height: 600px;
+   padding: 4rem;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10; /* höher als Hero */
+    transition: background-color 0.3s ease; /* sanfter Übergang */
+}
+
+nav.scrolled {
+    background-color: rgb(14, 13, 13, 0.6); /* z.B. halbtransparent schwarz */
+}
+
+/* Hero-Bereich */
+section.hero {
+    width: 100%;
+    height: 1200px;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 4rem;
+    background-color: transparent;
+}
+
+li {
+    list-style: none;
+    background-color: transparent;
+}
+
+a {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+/* Hero-Bild */
+img.heroImg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    opacity: 0.9;
+    transform: translate(-50%, -50%);
+ 
+}
+
+.heroTitle {
+    font-size: 100px;
+    z-index: 2;
+    color: #F7F4EA;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+ transform: translate(-50%, -50%);
+ opacity: 90%;
+ text-align: center;
+}
+
+
+.banner {
+    width: 100%;
+    height: 300px; /* volle Höhe des Viewports */
+    overflow: hidden;
+    position: relative;
+}
+
+img.bannerImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Bild bleibt proportional und füllt den Container */
+    object-position: center center;
+    display: block; /* entfernt kleine Lücken */
+}
+
+
+
+.container {
+    width: 80%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 gleich breite Spalten */
+    justify-content: center; /* Container-Inhalt horizontal zentrieren */
+    align-items: center;
+    gap: 4rem; /* Abstand zwischen den Items */
+}
+
+.content {
+    display: flex;
+    justify-content: center; /* horizontal zentriert im Content */
+    align-items: center;     /* vertikal zentriert im Content */
+    flex-direction: column;  /* Icon über Text */
+    text-align: center;      /* Text mittig */
+    gap: 2rem;
+    background-color: transparent;
+}
+
+.icon {
+    width: 100px;
+    height: auto;
+}
+
+.inhalt {
+    width: 80%;
+    display: flex;
+    justify-content: flex-start; /* horizontal zentriert im Content */
+    align-items: flex-start;     /* vertikal zentriert im Content */
+    flex-direction: column;  /* Icon über Text */ 
+    gap: 2rem;
+}
+
+.containerDuo {
+    width: 80%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 gleich breite Spalten */
+    justify-content: center; /* Container-Inhalt horizontal zentrieren */
+    align-items: center;
+    gap: 4rem; /* Abstand zwischen den Items */
+}
+
+.contentDuo {
+    display: flex;
+    justify-content: center; /* horizontal zentriert im Content */
+    align-items: flex-start;     /* vertikal zentriert im Content */
+    flex-direction: column;  /* Icon über Text */
+      /* Text mittig */
+    gap: 2rem;
+    background-color: transparent;
+}
+
+img.img {
+    width: 300px;
+    height: auto;
+}
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 26px;
+}
+
+p {
+    line-height: 1.5;
+    font-size: 18px;
+}
