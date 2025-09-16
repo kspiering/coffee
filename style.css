@@ -24,7 +24,7 @@
   color: light-dark(var(--light-color), var(--dark-color));
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
 
   
     .light {
@@ -36,8 +36,8 @@
   color-scheme: light;
   width: 100%;
   height: auto;
-      flex-wrap: wrap;
-      padding: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem;
 }
 .dark {
   /* forces dark color-scheme */
@@ -48,8 +48,8 @@
   color-scheme: dark;
     width: 100%;
   height: auto;
-      flex-wrap: wrap;
-            padding: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem;
 }
 
 /* Navigation */
@@ -115,7 +115,7 @@ img.heroImg {
 }
 
 .heroTitle {
-    width: 80%;
+    width: 90%;
     font-size: 35px;
     z-index: 2;
     color: #F7F4EA;
@@ -147,7 +147,7 @@ img.bannerImg {
 
 
 .container {
-    width: 80%;
+    width: 90%;
     display: flex;
     justify-content: center; /* Container-Inhalt horizontal zentrieren */
     align-items: center;
@@ -171,7 +171,7 @@ img.bannerImg {
 }
 
 .inhalt {
-    width: 80%;
+    width: 90%;
     display: flex;
     justify-content: flex-start; /* horizontal zentriert im Content */
     align-items: flex-start;     /* vertikal zentriert im Content */
@@ -181,7 +181,7 @@ img.bannerImg {
 }
 
 .containerDuo {
-    width: 80%;
+    width: 90%;
     display: flex;
     justify-content: center; /* Container-Inhalt horizontal zentrieren */
     align-items: center;
@@ -200,7 +200,7 @@ img.bannerImg {
 }
 
 img.img {
-    width: 250px;
+    width: 100%;
     height: auto;
 }
 h1 {
@@ -222,7 +222,7 @@ p, a {
 
 }
 
-@media (min-width: 801px) {
+@media (min-width: 901px) {
 
 
 .light {
@@ -343,11 +343,11 @@ img.bannerImg {
 
 
 .container {
-    width: 80%;
+    width: 90%;
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 gleich breite Spalten */
     justify-content: center; /* Container-Inhalt horizontal zentrieren */
-    align-items: center;
+    align-items: flex-start;
     gap: 4rem; /* Abstand zwischen den Items */
 }
 
@@ -367,7 +367,7 @@ img.bannerImg {
 }
 
 .inhalt {
-    width: 80%;
+    width: 90%;
     display: flex;
     justify-content: flex-start; /* horizontal zentriert im Content */
     align-items: flex-start;     /* vertikal zentriert im Content */
@@ -376,11 +376,11 @@ img.bannerImg {
 }
 
 .containerDuo {
-    width: 80%;
+    width: 90%;
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 3 gleich breite Spalten */
     justify-content: flex-start; /* Container-Inhalt horizontal zentrieren */
-    align-items: flex-start;
+    align-items: center;
     gap: 4rem; /* Abstand zwischen den Items */
     background-color: transparent;
 }
@@ -395,7 +395,7 @@ img.bannerImg {
 }
 
 img.img {
-    width: 300px;
+    width: 100%;
     height: auto;
 }
 h1 {
